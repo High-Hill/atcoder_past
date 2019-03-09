@@ -2,16 +2,13 @@
 using namespace std;
 
 int main(){
-    int a, b, c, d;
+    float a, b, c, d;
     cin >> a >> b >> c >> d;
-    int takahashi, aoki;
-    takahashi = b / a;
-    aoki = d / c;
-    if(takahashi > aoki){
+    if((b / a) > (d / c)){
         cout << "TAKAHASHI" << endl;
-    }else if(takahashi < aoki){
+    }else if((b / a) < (d / c)){
         cout << "AOKI" << endl;
-    }else{
+    }else if((b / a) == (d / c)){
         cout << "DRAW" << endl;
     }
     return 0;
